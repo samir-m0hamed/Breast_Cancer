@@ -66,9 +66,9 @@ These results indicate high generalization ability and reliable tumor classifica
 ## 🚀 Run Instructions
 
 1. Clone the repository:
-```bash
-git clone https://github.com/samir-m0hamed/Breast_Cancer.git
-```
+   ```bash
+    git clone https://github.com/samir-m0hamed/Breast_Cancer.git
+    ```
 2.  Install the required packages:
     ```bash
     pip install pandas numpy plotly scikit-learn

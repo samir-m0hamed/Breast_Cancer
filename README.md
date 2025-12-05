@@ -1,60 +1,92 @@
-# Breast Cancer Prediction using Logistic Regression 🎗️
+# Breast Cancer Classification using Logistic Regression 🎗️
 
-## 📌 Project Overview
-This project implements a Machine Learning model using **Logistic Regression** to predict whether a breast cancer tumor is **Benign (0)** or **Malignant (1)**. The project utilizes the Wisconsin Breast Cancer dataset and achieves a high accuracy rate on test data.
+## 📌 Overview
+- This project builds a Machine Learning classifier using **Logistic Regression** to determine whether a breast tumor is **Benign (0)** or **Malignant (1)**.  
+- Using the Wisconsin Breast Cancer dataset, the model delivers high classification performance on unseen samples.
 
-## 📂 Dataset
-The dataset consists of various features computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.
-* **Source:** Wisconsin Breast Cancer Dataset.
-* **Features:** Clump Thickness, Uniformity of Cell Size, Cell Shape, Marginal Adhesion, etc.
-* **Target:** Class (2 for Benign, 4 for Malignant).
+---
 
-## 🛠️ Technologies Used
-* **Python**
-* **Pandas & NumPy** (Data Manipulation)
-* **Plotly** (Interactive Data Visualization)
-* **Scikit-Learn** (Model Training & Evaluation)
+## 📂 Dataset Information
+The dataset includes numeric measurements extracted from digital images of fine needle aspirates (FNA) of breast masses.
 
-## 📊 Key Steps
-1.  **Exploratory Data Analysis (EDA):**
-    * Visualized feature distributions using Histograms.
-    * Analyzed feature relationships using a Correlation Matrix Heatmap.
-2.  **Data Preprocessing:**
-    * Removed irrelevant columns (`Sample code number`).
-    * Checked for missing values.
-    * Encoded the target column:
-        * `2` (Benign) $\rightarrow$ `0`
-        * `4` (Malignant) $\rightarrow$ `1`
-3.  **Model Training:**
-    * Split data into 80% training and 20% testing sets.
-    * Trained a Logistic Regression model.
-4.  **Evaluation:**
-    * Used Accuracy Score and Confusion Matrix.
+**Dataset highlights:**
+- **Source:** Wisconsin Breast Cancer Database  
+- **Features:** Cell size, cell shape, marginal adhesion, bare nuclei, mitoses, etc.  
+- **Target:** Tumor type  
+  - `2` → Benign  
+  - `4` → Malignant  
 
-## 📈 Results
-The model performed exceptionally well on the testing dataset:
+In the project, the target classes were mapped to:
+- `0` → Benign  
+- `1` → Malignant  
 
-| Metric | Score |
+---
+
+## 🛠️ Tools & Libraries
+- **Python**
+- **Pandas, NumPy** — data handling and processing  
+- **Plotly** — interactive data visualization  
+- **Scikit-Learn** — model building and evaluation  
+
+---
+
+## 📊 Workflow Summary
+
+1. **Data Exploration**
+   - Plotted feature distributions using histograms
+   - Evaluated feature correlations via a heatmap
+
+2. **Preprocessing**
+   - Dropped unnecessary fields (e.g., `Sample code number`)
+   - Checked for missing or inconsistent values
+   - Converted target labels to binary format
+
+3. **Training**
+   - Data split: 80% training / 20% testing
+   - Logistic Regression model trained on scaled inputs
+
+4. **Evaluation**
+   - Performance measured using accuracy and confusion matrix
+
+---
+
+## 📈 Performance
+
+The trained model achieved outstanding predictive results:
+
+| Metric | Value |
 | :--- | :--- |
 | **Training Accuracy** | **96.67%** |
 | **Testing Accuracy** | **95.56%** |
 
-## 🚀 How to Run
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/your-username/breast-cancer-prediction.git](https://github.com/your-samir-m0hamed/Breast_Cancer.git)
-    ```
+These results indicate high generalization ability and reliable tumor classification performance.
+
+---
+
+## 🚀 Run Instructions
+
+1. Clone the repository:
+```bash
+git clone https://github.com/samir-m0hamed/Breast_Cancer.git
+```
 2.  Install the required packages:
     ```bash
     pip install pandas numpy plotly scikit-learn
     ```
 3.  Run the Jupyter Notebook:
     ```bash
-    jupyter notebook Breast_cancer.ipynb
+    jupyter notebook Breast cancer.ipynb
     ```
 
+---
+
 ## 🤝 Contributing
-Contributions, issues, and feature requests are welcome!
+- Contributions, feature suggestions, and improvements are welcome.
+- Feel free to open an issue, report bugs, or submit a pull request to enhance the repository.
 
 ---
-*Created by [Samir Mohamed Samir]*
+
+## 👤 Developed By
+
+**Samir Mohamed Samir**  
+
